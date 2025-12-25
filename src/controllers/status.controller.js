@@ -1,4 +1,4 @@
-const statusService = require('../services/status.service');
+const statusService = require('../../services/status.service');
 
 exports.getStatus = async (req, res) => {
   try {
