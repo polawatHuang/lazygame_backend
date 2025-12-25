@@ -24,7 +24,7 @@ exports.getSystemStatus = async () => {
   }
 
   return {
-    service: 'พักบ้างนะ API',
+    service: 'พักกันเถอะ API',
     status: 'ok',
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
