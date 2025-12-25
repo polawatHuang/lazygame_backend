@@ -12,4 +12,7 @@ app.use('/api/items', require('./routes/item.routes'));
 app.use('/api/shop', require('./routes/shop.routes'));
 app.use('/api/lazy', require('./routes/lazy.routes'));
 
+// Health check endpoint
+app.use('/api/status', require('./routes/status.routes'));
+
 module.exports = app;
