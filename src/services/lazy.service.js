@@ -1,5 +1,5 @@
-const db = require('./../src/config/db');
-const rankUtil = require('../utils/lazyRank');
+const db = require('../config/db');
+const rankUtil = require('../../utils/lazyRank');
 
 exports.addScore = async (userId, score, source) => {
   await db.query(

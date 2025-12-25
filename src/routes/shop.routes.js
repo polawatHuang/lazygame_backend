@@ -1,9 +1,8 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
+const auth = require('../middlewares/auth.middleware');
+const controller = require('../controllers/shop.controller');
 
-router.get('/packages', async (req, res) => {
-  const data = await db.query(`SELECT * FROM shop_packages`);
-  res.json(data.rows);
-});
+router.get('/', auth, controller.getShopItems);
+router.post('/buy', auth, controller.buyItem);
 
 module.exports = router;
