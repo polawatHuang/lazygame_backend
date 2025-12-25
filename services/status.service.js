@@ -1,4 +1,4 @@
-const db = require('../config/db');
+const db = require('./../src/config/db');
 
 exports.getSystemStatus = async () => {
   let dbStatus = 'disconnected';
